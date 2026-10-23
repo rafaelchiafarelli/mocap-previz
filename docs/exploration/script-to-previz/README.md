@@ -39,6 +39,8 @@ here is film-specific; the pilot film is referred to only as "the pilot film"
 | D3 | The **writer's text is the source of truth** for the script, written in a tool made for screenwriters. Harpia only receives what is *extracted* from it; it never writes back to the script. (Rejected: modelling the screenplay itself in Harpia with Fountain as a view.) |
 | D4 | Rafael will try converting the pilot film's script (currently `.docx`) to **Fountain**. |
 | D5 | Film-root files are structured for parallel processing and preview, integrated with `mocap-preprod`. |
+| D6 | (2026-10-23) The script format stays **Fountain**. Celtx rejected: today it is proprietary cloud software, keeps the script on its servers in a closed format, and is not plain text the parser can read or git can diff. |
+| D7 | (2026-10-23) Scripts enter through a **PDF → Fountain importer** (Rafael's existing scripts are master-scene PDFs from several programs). It replaces the planned docx converter: the pilot `.docx` is exported to PDF and imported the same way. |
 
 ## 3. Spikes already done (evidence in `spikes/`)
 
@@ -202,7 +204,7 @@ location, unknown prop, rule broken). Rafael reviews exceptions, not scenes.
 6. Overlaps HANDOFF Q14 (storyboard style, recipe/shot file formats, target
    skeleton) — answer once for both.
 7. Final output: one SVG per shot, or a multi-panel board sheet.
-8. Where the docx → Fountain converter and the Fountain parser live:
+8. Where the PDF → Fountain importer and the Fountain parser live:
    `mocap-previz` or `mocap-preprod` (the previz side is decided: this repo).
 
 **Unknowns (need a test)**
@@ -220,8 +222,8 @@ location, unknown prop, rule broken). Rafael reviews exceptions, not scenes.
 
 ## 7. Suggested next steps (after the face test)
 
-1. Convert the pilot script `.docx` → Fountain **with a script, not an LLM**
-   (docx paragraph styles map to scene/character/dialogue).
+1. Import the pilot script (its `.docx` exported to PDF) → Fountain **with a
+   script, not an LLM** (line indents map to scene/character/dialogue, D7).
 2. Run U2 on one converted scene with a minimal hand-written bible.
 3. Then decide approval-by-rule (#2) and the orchestrator.
 4. Only then plan initiatives/tasks per the `mocap-workflow` skill.

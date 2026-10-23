@@ -1,7 +1,7 @@
 # validation — epics (execution order)
 
 1. **decisions** — Rafael's open decisions (1 task, manual)
-2. **fountain-input** — docx → Fountain → parser (2 tasks)
+2. **fountain-input** — PDF → Fountain → parser (2 tasks)
 3. **blocking-test** — U2: blocking and cameras from one real scene (1 task, film session)
 
 `fountain-input` waits for decisions 4 and 8. `blocking-test` needs one scene
