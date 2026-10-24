@@ -1,0 +1,25 @@
+# iniciativas que temos que criar.
+## cosméticas
+* a splash screen não sai sem clicarmos. precisamos colocar um timer 3 segundos é mais do que suficiente, ou algum processo de carregamento que demore mais do que isso.*
+* não temos botão de zoom. Deve ter em algum lugar a habilidade de darmos zoom no texto e manter a barra de comandos intacta
+* precisamos de um tema dark. o tema está bastante branco e isso cansa a vista. 
+* as caixas auxiliares que surgem quando fazemos o hover sobre os icones, começam fora da tela e cortam o texto. Elas precisam começar dentro da área do programa.
+* 
+
+## elementos faltantes
+* precisamos de mais itens para o tipo de elemento. Principalmente para o diálogo, quando quisermos colocar alguma nota para o ator, por exemplo, quando o personagem estiver ofegante, quero colocar uma nota entre parenteses para o ator saber que ele deve estar ofegante.
+* notas precisam ser sobre trechos de texto e servirão para o restante do código funcionar melhor.
+* quando clicamos com o botão direito para definir qual o elemento estamos editando, ele mostra algumas letras entre parenteses (acredito que seja algum tipo de short-cut) precisamos que, a cada tab do teclado, um tipo de elemento é selecionado. A ordem é Scene, Action, Character, Dialogue. Depois vamos construir regras melhores para isso (assim que tivermos mais elementos)
+* palavras em maúsculo nas linhas de Ação, devem ser sublinhadas e deverão ser marcadas para o futuro, elas vão representar items de cenicos importantes. 
+* cenas devem ser automaticamente numeradas - eu sei que isso não é master scenes, porém venho do teatro, e ter o número da cena facilita muito. Podemos investigar como colocar o prefixo (INT, EXT) mais adiante. 
+* Precisamos fazer um mapa de cenas, mapa de personagens, mapa de itens cenicos, mapa de figurinos e mapa de cenários. Os itens nesse mapa devem ser copiáveis, ou seja, o usuário pode copiar para outro projeto ou criar uma cópia dentro desse projeto. Mesmo que esse item não tenha uma referencia absoluta definida. Então, por exemplo, se a cena 1 está acontecendo no cenário "sala de jantar". Podemos criar uma nova "sala de jantar" mas não estar em cena nenhuma e colocarmos essa mesma sala lá no futuro quando chegarmos à cena 50. O inverso também é possível, porém precisamos ter um aviso para o usuário. Esses mapas, portanto é como uma estrutura de pastas do windows explorer. Cada pastinha contém o item de interesse e pode conter outros itens dentro dele. 
+
+* * mapa de cenários: entendemos que a cena acontece em um cenário então vamos vincular as duas coisas. 
+* * mapa de cena: A cada cena colocada nova (que não está nos registros) um novo cenário é colocado no mapa, permitindo uma descrição profunda do que tem nesse cenário. Qual o tamanho, quantas janelas, quantas portas, qual a cor da parede, tipo de arquitetura e muito mais (proponha itens que serão importantes para a construção desses scenarios virtuais). É possível colocar uma planta baixa, ou algum arquivo do blender para definir o cenário? Construa um local para colocar fotos, descrições diversas e mobilia presente. Não precisamos criar um mapa de mobilia (a mobilia que está descrita como item cenico pode ser colocada aqui também), mas precisamos ser capazes de descrever o objeto e dar caracteristicas, como por exemplo: cama desarrumada. sofá sujo, tapete rasgado. 
+* * mapa de personagens: quando um personagem é adicionado, um novo registro é criado. Teremos traços de personalidade, emoções predominantes, arquétipos de yung, fisicalidade (porte físico), deficiencia, maneirismos, comprimento do cabelo e descrição fisica. Na descrição física, coloque todos os elementos que podem ser importantes para o personagem animado (tamanho da boca, tamanho do olho, tamanho do nariz, cor dos olhos, etc). Pode colocar bastante coisa aqui. Isso irá alimentar as IA´s posteriormente. Entre no projecto mocap-preprod e entenda o que pode ser colocado aqui.
+* * mapa de itens cenicos: quando um item cenico é detectado (pela palavra maiúscula nas linhas de ação) um novo registro é criado. Abuse das possibilidades aqui, partindo de qual material é feito o objeto, chegando até no desenho desse objeto. Coloque inclusive: o que o personagem sente quando toca? A superficie é lisa, grudenta, suave? qual gosto que esse objeto tem? etc. todas essas informações serão usadas por uma IA, então olhe no mocap-preprod procurando por pistas do que pode ser importante aqui.
+* * mapa de figurinos: devemos vincular o figurino com o personagem em uma cena. Um figurino pode ser copiado para outro projeto, ou criar uma cópia desse figuringo ainda não vinculada com personagem. Vamos colocar tantas descrições quanto possível aqui, porém é importante deixar espaço para fotos, modelos de blender, tipos de tecido e as mais diversas marcas (estou entendendo que posso colocar marcas nos meus filmes).
+
+## auxiliares para contação da história
+* precisamos saber em qual ato estamos, em qual momento da história. Essa é uma ferramenta exploratória e deve ser estudada mais profundamente. 
+* 

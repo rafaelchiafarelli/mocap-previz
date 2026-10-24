@@ -41,6 +41,7 @@ here is film-specific; the pilot film is referred to only as "the pilot film"
 | D5 | Film-root files are structured for parallel processing and preview, integrated with `mocap-preprod`. |
 | D6 | (2026-10-23) The script format stays **Fountain**. Celtx rejected: today it is proprietary cloud software, keeps the script on its servers in a closed format, and is not plain text the parser can read or git can diff. |
 | D7 | (2026-10-23) Scripts enter through a **PDF → Fountain importer** (Rafael's existing scripts are master-scene PDFs from several programs). It replaces the planned docx converter: the pilot `.docx` is exported to PDF and imported the same way. |
+| D8 | (2026-10-24, partial) The PDF importer lives in **`mocap-writer`** (the Trelby fork, the script editor), as its first initiative `pdf-import`. Where the Fountain parser lives is still open. |
 
 ## 3. Spikes already done (evidence in `spikes/`)
 
@@ -204,8 +205,8 @@ location, unknown prop, rule broken). Rafael reviews exceptions, not scenes.
 6. Overlaps HANDOFF Q14 (storyboard style, recipe/shot file formats, target
    skeleton) — answer once for both.
 7. Final output: one SVG per shot, or a multi-panel board sheet.
-8. Where the PDF → Fountain importer and the Fountain parser live:
-   `mocap-previz` or `mocap-preprod` (the previz side is decided: this repo).
+8. Where the Fountain parser lives: `mocap-previz` or `mocap-preprod` (the
+   importer is decided: `mocap-writer`, D8).
 
 **Unknowns (need a test)**
 - **U1 — stable identity across rewrites.** Scene number is the only anchor;
@@ -222,8 +223,8 @@ location, unknown prop, rule broken). Rafael reviews exceptions, not scenes.
 
 ## 7. Suggested next steps (after the face test)
 
-1. Import the pilot script (its `.docx` exported to PDF) → Fountain **with a
-   script, not an LLM** (line indents map to scene/character/dialogue, D7).
+1. Import the pilot script (its `.docx` exported to PDF) → Fountain with
+   `mocap-writer`'s importer (line indents, no LLM; D7, D8).
 2. Run U2 on one converted scene with a minimal hand-written bible.
 3. Then decide approval-by-rule (#2) and the orchestrator.
 4. Only then plan initiatives/tasks per the `mocap-workflow` skill.
