@@ -8,8 +8,9 @@ Rafael's open decisions, a real script in Fountain that our own parser reads,
 and whether the hosted agent can produce coherent blocking and cameras from a
 real scene (exploration §6, unknown U2).
 
-**Scope:** decisions (manual), the PDF → Fountain importer and the Fountain
-parser (code, deterministic, no LLM), one blocking test (a film session, no
+**Scope:** decisions (manual), the pilot script imported to Fountain with
+`mocap-writer`'s importer (film session), the Fountain parser (code,
+deterministic, no LLM), one blocking test (a film session, no
 code). Findings and proposals:
 `docs/exploration/script-to-previz/README.md`.
 
