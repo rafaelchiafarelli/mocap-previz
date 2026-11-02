@@ -31,7 +31,7 @@ waits for the face test (`mocap-studio` initiative `face-audio`).
 |---|---|
 | `docs/exploration/script-to-previz/` | exploration record and spikes (`lineart_svg_spike.py`, Fountain parser probes) |
 | `initiatives/` | initiatives → epics → tasks |
-| `third_party/mocap-contracts/` | submodule, pinned to `v0.3.0` (fixtures and `.harpia` sources; code comes from the pinned pip package once there is code) |
+| `third_party/mocap-contracts/` | submodule, pinned to `v0.8.0` (fixtures and `.harpia` sources; code comes from the pinned pip package once there is code) |
 
 ```bash
 git clone --recurse-submodules git@github.com:rafaelchiafarelli/mocap-previz.git
