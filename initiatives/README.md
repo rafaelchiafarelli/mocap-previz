@@ -23,4 +23,4 @@ Rules specific to this repository:
 
 | Initiative | Status |
 |---|---|
-| [validation](validation/validation.md) | Planned — waits for the `face-audio` verdict in `mocap-studio` |
+| [validation](validation/validation.md) | Planned — waits for Rafael's go-ahead |

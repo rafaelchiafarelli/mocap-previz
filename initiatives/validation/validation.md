@@ -1,7 +1,7 @@
 # validation — mocap-previz
 
-**Status:** Planned — not started. Waits for the `face-audio` verdict in
-`mocap-studio` (Rafael: the face test comes first).
+**Status:** Planned — not started. It waited for `face-audio` in `mocap-studio`,
+which was retired on 2026-11-03. It starts when Rafael says so.
 
 **Goal:** answer what has to be true before any previz pipeline is built:
 Rafael's open decisions, a real script in Fountain that our own parser reads,

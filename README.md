@@ -10,7 +10,7 @@ built from, and every output stays editable.
 architecture are in
 [`docs/exploration/script-to-previz/`](docs/exploration/script-to-previz/README.md).
 The first initiative, [`validation`](initiatives/validation/validation.md),
-waits for the face test (`mocap-studio` initiative `face-audio`).
+is planned and waits for Rafael's go-ahead.
 
 ## Rules
 
